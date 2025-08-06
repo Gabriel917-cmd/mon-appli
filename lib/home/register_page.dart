@@ -76,6 +76,7 @@ class _RegisterPageState extends State<RegisterPage> {
               hintText: 'Confirmer le mot de passe ',
               controller: passwordController,
               isPassword: true,
+              suffixIcon: Icons.visibility,
             ),
             const SizedBox(height: 20,),
             Wrap(
@@ -95,7 +96,7 @@ class _RegisterPageState extends State<RegisterPage> {
             CustomButton(
               text: "S'inscrire",
               isLoading: isLoading,
-              onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => const HomePage(username: "gabriel")),
+              onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => const HomePage()),
               );
               },
             ),

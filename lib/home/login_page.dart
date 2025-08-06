@@ -73,7 +73,7 @@ class _LoginPageState extends State<LoginPage> {
               CustomButton(
                 text: " Se connecter ",
                 isLoading: isLoading,
-                onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => const HomePage(username: "gabriel"))
+                onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => const HomePage()),
                 );
                 },
 
