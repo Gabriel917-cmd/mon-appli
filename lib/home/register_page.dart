@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mon_appli/compoments/custom_buttom.dart';
 import 'package:mon_appli/compoments/custom_textfiel.dart';
 import 'package:mon_appli/home/home_page.dart';
+import 'package:mon_appli/home/login_page.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
@@ -62,7 +63,9 @@ class _RegisterPageState extends State<RegisterPage> {
             const SizedBox(height: 12,),
             CustomTextfield(
                 prefixIcon: Icons.mail,
-                hintText: 'Adresse email', controller: emailController),
+                hintText: 'Adresse email',
+                controller: emailController
+            ),
             const SizedBox(height: 12,),
             CustomTextfield(
               prefixIcon: Icons.lock,
@@ -100,6 +103,13 @@ class _RegisterPageState extends State<RegisterPage> {
               );
               },
             ),
+        SizedBox(height: 30,),
+        TextButton(
+          onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => const LoginPage()),
+          );
+          },
+          child: Text("Se connecter")
+        )
           ],
         ),
       ),

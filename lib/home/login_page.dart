@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:mon_appli/compoments/custom_buttom.dart';
 import 'package:mon_appli/compoments/custom_textfiel.dart';
+import 'package:mon_appli/home/forgot_page.dart';
 import 'package:mon_appli/home/home_page.dart';
+import 'package:mon_appli/home/register_page.dart';
 
 
 class LoginPage extends StatefulWidget {
@@ -36,7 +38,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("heureux de vous revoir"),
+      appBar: AppBar(title: const Text("SE CONNECTER"),
         centerTitle: true
         ,
       ),
@@ -46,7 +48,7 @@ class _LoginPageState extends State<LoginPage> {
             children: [
               Icon(Icons.login,color: Colors.blue,size: 100,),
               SizedBox(height: 20,),
-              Text("Se connecter a votre compte",
+              Text("Heurreux de vous revoir",
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 25
@@ -76,8 +78,21 @@ class _LoginPageState extends State<LoginPage> {
                 onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => const HomePage()),
                 );
                 },
-
               ),
+              SizedBox(height: 15, width: 60,),
+              TextButton(
+                  onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => const ForgotPage()),
+                  );
+                  },
+                  child: Text("mot de passe oublie"),
+      ),
+              SizedBox(height: 15, width: 60,),
+              TextButton(
+                  onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => const RegisterPage()),
+                  );
+                  },
+                  child: Text("S'incrire")
+              )
             ]
         ),
       ),

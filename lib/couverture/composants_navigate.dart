@@ -135,7 +135,7 @@ import 'package:flutter/material.dart';
           ? ElevatedButton(
              style:  ElevatedButton.styleFrom(
             backgroundColor: Colors.blue,
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10 ),
+            padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 20 ),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(30),
             ),
@@ -154,7 +154,7 @@ import 'package:flutter/material.dart';
               :  ElevatedButton(
               style:  ElevatedButton.styleFrom(
                 backgroundColor: Colors.blue,
-                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10 ),
+                padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15 ),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30),
                 ),
