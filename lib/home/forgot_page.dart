@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mon_appli/compoments/custom_buttom.dart';
 import 'package:mon_appli/compoments/custom_textfiel.dart';
+import 'package:mon_appli/home/home_page.dart';
 import 'package:mon_appli/home/validation.dart';
 
   class ForgotPage extends StatefulWidget {
@@ -41,7 +42,7 @@ import 'package:mon_appli/home/validation.dart';
         SizedBox(height: 30),
         CustomButton(text: "envoyer", onPressed: () {
           Navigator.push(
-            context, MaterialPageRoute(builder: (context) => Validation()),);
+            context, MaterialPageRoute(builder: (context) => CodeEntryScreen ()),);
         }
           )
 

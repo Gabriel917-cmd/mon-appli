@@ -5,6 +5,18 @@ import 'package:flutter/material.dart';
 
     @override
     Widget build(BuildContext context) {
-      return Scaffold();
+      return Scaffold(
+        bottomNavigationBar: BottomNavigationBar(
+            items:[
+              BottomNavigationBarItem(
+                icon: Icon(Icons.home),
+                label: "accuiel"),
+          BottomNavigationBarItem(
+                icon: Icon(Icons.settings),
+                label: "accuiel"
+          ),
+            ]
+        ),
+      );
     }
   }

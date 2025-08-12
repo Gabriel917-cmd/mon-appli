@@ -3,6 +3,7 @@ import 'package:mon_appli/couverture/navigate.dart';
 import 'package:mon_appli/home/forgot_page.dart';
 import 'package:mon_appli/home/landing_page.dart';
 import 'package:mon_appli/home/register_page.dart';
+import 'package:mon_appli/home/validation.dart' ;
 void main() {
   runApp(const MyApp());
 }
