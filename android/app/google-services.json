@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1036388644273",
+    "project_id": "monappli-f4791",
+    "storage_bucket": "monappli-f4791.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036388644273:android:8d6fedb9df382ae8d9f990",
+        "android_client_info": {
+          "package_name": "com.example.mon_appli"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036388644273-kjt9i99ntdod5824p7n89tplp4ktu8tf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6fGvDUKLcpC8gLyHZ5DJTah6LyrA863g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036388644273-kjt9i99ntdod5824p7n89tplp4ktu8tf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1036388644273-nt15g8opoukuh28g237a9b2kgdg35lsu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.monAppli"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

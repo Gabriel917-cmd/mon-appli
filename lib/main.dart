@@ -1,13 +1,20 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:mon_appli/couverture/navigate.dart';
+import 'package:mon_appli/home/accuiel/actualites.dart';
 import 'package:mon_appli/home/forgot_page.dart';
+import 'package:mon_appli/home/home_page.dart';
 import 'package:mon_appli/home/landing_page.dart';
+import 'package:mon_appli/home/login_page.dart';
 import 'package:mon_appli/home/register_page.dart';
 import 'package:mon_appli/home/validation.dart' ;
-void main() {
+import 'home/accuiel/chatbot.dart';
+
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
   

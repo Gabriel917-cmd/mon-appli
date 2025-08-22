@@ -14,14 +14,17 @@ import 'package:mon_appli/home/login_page.dart';
     final List<OnboardingPage> pages = [
       OnboardingPage(
      imagePath: "assets/images/Thesis-rafiki.png",
+        title: 'votre professeur d\'orientation',
      description: "profite d'une meilleur experience",
     ),
       OnboardingPage(
      imagePath: "assets/images/Learning-rafiki.png",
+        title: 'votre professeur d\'orientation',
      description: "pour une meilleur oriente academique et professionnel",
       ),
       OnboardingPage(
         imagePath: "assets/images/graduation hats-rafiki.png",
+        title: 'votre professeur d\'orientation',
         description: " pour un avenir meilleur ",
       )
     ];
@@ -74,7 +77,7 @@ import 'package:mon_appli/home/login_page.dart';
                                 Navigator.pushReplacement(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => const LandingPage()
+                                      builder: (context) => const LoginPage()
                                   ),
                                 );
                               } else {

@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 
   class OnboardingPage  {
     final String description;
-
+    final String title;
     final String imagePath;
 
     const OnboardingPage({
       required this.description,
+      required  this.title,
       required this.imagePath,
       });
   }
@@ -76,17 +77,16 @@ import 'package:flutter/material.dart';
         children: [
           Column(
             children: [
-              const SizedBox( height: 50),
+              const SizedBox( height: 70),
               Hero (
                 tag: "images" ,
                 child: Image.asset(
                   page.imagePath,
-                  height: 300,
+                  height: 340,
                   fit: BoxFit.contain,
                   errorBuilder: (context, error, stackTrace) => Container(
                     height: 300,
                     color: Colors.grey[200],
-                    child: const Icon(Icons.book, size: 50, color: Colors.grey),
                   ),
                 ),
               ),
@@ -96,7 +96,16 @@ import 'package:flutter/material.dart';
               padding: const EdgeInsets.only(bottom: 170),
           child: Column(
             children: [
-              const SizedBox(height: 20),
+              Text(
+                page.title,
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blue
+                ),
+              ),
+              const SizedBox(height: 40),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 40),
                 child: Text(
@@ -130,7 +139,7 @@ import 'package:flutter/material.dart';
     @override
     Widget build(BuildContext context) {
       return AnimatedSwitcher(
-          duration: const Duration(seconds: 1),
+          duration: const Duration(seconds: 3),
           child: isLastPage
           ? ElevatedButton(
              style:  ElevatedButton.styleFrom(

@@ -37,13 +37,18 @@ import 'package:mon_appli/home/validation.dart';
         CustomTextfield(
             prefixIcon: Icons.mail,
             hintText: "adresse email valide",
-            controller: emailController,
+            controller: emailController,  onSuffixPressed: () {  }, fillColor: Colors.white38, filled: true,
         ),
+
         SizedBox(height: 30),
         CustomButton(text: "envoyer", onPressed: () {
           Navigator.push(
-            context, MaterialPageRoute(builder: (context) => CodeEntryScreen ()),);
-        }
+            context, MaterialPageRoute(builder: (context) => CodeValidationAp ()),);
+        },
+          backgroundColor: Colors.blueAccent,
+          textColor: Colors.white,
+          height: 55,
+          borderRadius: 12,
           )
 
 

@@ -117,10 +117,9 @@ class _CodeEntryScreenState extends State<CodeEntryScreen> {
         title: const Text('Validation du code',
           style: TextStyle(
             color: Colors.white,
-            fontSize: 40,
+            fontSize: 30,
           ),
-          textAlign: TextAlign.center,
-        ),
+        ),centerTitle: true,
         backgroundColor: Colors.blue,
       ),
       body: Center(
