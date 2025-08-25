@@ -19,12 +19,12 @@ import 'package:mon_appli/home/login_page.dart';
     ),
       OnboardingPage(
      imagePath: "assets/images/Learning-rafiki.png",
-        title: 'votre professeur d\'orientation',
+        title: 'Votre avenir notre priorite',
      description: "pour une meilleur oriente academique et professionnel",
       ),
       OnboardingPage(
         imagePath: "assets/images/graduation hats-rafiki.png",
-        title: 'votre professeur d\'orientation',
+        title: '',
         description: " pour un avenir meilleur ",
       )
     ];

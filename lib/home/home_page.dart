@@ -15,6 +15,8 @@ import 'package:mon_appli/home/accuiel/stage.dart';
 
   class _HomePageState extends State<HomePage> {
     int CurrentIndex = 2 ;
+
+
     setCurrentIndex (int index){
       setState(() {
         CurrentIndex = index;
@@ -24,7 +26,7 @@ import 'package:mon_appli/home/accuiel/stage.dart';
     Widget build(BuildContext context) {
        return Scaffold(
          body: [
-           Stage(),
+           StagePage(stage:Stage(id: '0000', titre: 'developpeur', entreprise: "Mercy innovation", localisation: "Nvan", description: "devellopeur mobile et web", imageUrl: "assets/images/Thesis-rafiki,png", competences: ["Flutter", "Dart", "Firebase", "UI/UX"],),),
            ChatBotApp(),
            Accuiel(),
            Actualites(),

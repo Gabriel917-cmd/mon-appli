@@ -199,7 +199,7 @@ class ChatMessage extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: isUser
                       ? Theme.of(context).primaryColor
-                      : Colors.blue,
+                      : Colors.grey.shade500,
                   borderRadius: BorderRadius.only(
                     topLeft: const Radius.circular(12),
                     topRight: const Radius.circular(12),

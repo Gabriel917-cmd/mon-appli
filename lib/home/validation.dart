@@ -26,12 +26,12 @@ class CodeEntryScreen extends StatefulWidget {
 }
 
 class _CodeEntryScreenState extends State<CodeEntryScreen> {
-  final String validCode = "1234"; // Code valide
+  final String validCode = "1234";
   final List<TextEditingController> _controllers = List.generate(4, (index) => TextEditingController());
   final List<FocusNode> _focusNodes = List.generate(4, (index) => FocusNode());
   bool isError = false;
   bool _isResending = false;
-  int _resendCountdown = 30; // 30 secondes avant de pouvoir renvoyer
+  int _resendCountdown = 30;
 
   @override
   void initState() {
