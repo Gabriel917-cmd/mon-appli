@@ -26,7 +26,7 @@ import 'package:mon_appli/home/accuiel/stage.dart';
     Widget build(BuildContext context) {
        return Scaffold(
          body: [
-           StagePage(stage:Stage(id: '0000', titre: 'developpeur', entreprise: "Mercy innovation", localisation: "Nvan", description: "devellopeur mobile et web", imageUrl: "assets/images/Thesis-rafiki,png", competences: ["Flutter", "Dart", "Firebase", "UI/UX"],),),
+           StageApplicationPage(),
            ChatBotApp(),
            Accuiel(),
            Actualites(),

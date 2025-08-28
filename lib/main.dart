@@ -8,6 +8,7 @@ import 'package:mon_appli/home/landing_page.dart';
 import 'package:mon_appli/home/login_page.dart';
 import 'package:mon_appli/home/register_page.dart';
 import 'package:mon_appli/home/validation.dart' ;
+import 'admin/dashboard.dart';
 import 'home/accuiel/chatbot.dart';
 
 void main() async{
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
      debugShowCheckedModeBanner: false,
-        home: Navigate()
+        home: OnboardingScreen()
     );
   }
 }
